@@ -5,7 +5,7 @@ export interface Props {
   linkLogin?: string;
 }
 
-function Auth({ description, linkLogin }: Props) {
+function Signup({ description, linkLogin }: Props) {
   return (
     <div class="h-screen w-full bg-zinc-200 flex flex-col items-center justify-center">
       <div class="bg-white flex flex-col items-center justify-center p-16 w-[600px] h-[668px] shadow-md m-x-[420px] max-sm:h-full max-sm:w-full">
@@ -68,4 +68,4 @@ function Auth({ description, linkLogin }: Props) {
   );
 }
 
-export default Auth;
+export default Signup;
