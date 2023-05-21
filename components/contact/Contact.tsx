@@ -9,7 +9,10 @@ export default function Contact({ informacao, link }: Props) {
       <div class="font-sans bg-white w-[600px] h-[668px] px-16 flex flex-col items-center shadow-lg max-sm:h-full max-sm:w-full">
         <div class="w-[472px] h-24 mt-16 max-sm:flex max-sm:items-center max-sm:justify-center max-sm:flex-col">
           <h1 class="text-5xl font-sans mb-3">Contact Us</h1>
-          <p class="text-lg font-sans mb-5">{informacao || "Lorem ipsum dolor sit amet consectetur adipisicing elit."}</p>
+          <p class="text-lg font-sans mb-5">
+            {informacao ||
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+          </p>
         </div>
 
         <form class="w-full">
