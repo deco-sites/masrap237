@@ -1,8 +1,8 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Props {
-  logo: LiveImage;
-  alt: string;
+  logo?: LiveImage;
+  alt?: string;
 }
 
 const Header = ({ logo, alt }: Props) => {

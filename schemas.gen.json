@@ -6951,14 +6951,14 @@
           "title": "Logo"
         },
         "alt": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Alt"
         }
       },
-      "required": [
-        "logo",
-        "alt"
-      ],
+      "required": [],
       "title": "deco-sites/masrap237/components/auth/Header.tsx@Props"
     },
     "ZGVjby1zaXRlcy9tYXNyYXAyMzcvY29tcG9uZW50cy9hdXRoL2xvZ2luLnRzeA==@Props": {

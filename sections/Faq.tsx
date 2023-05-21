@@ -35,7 +35,7 @@ export default function FAQ(props: Props) {
           FAQs
         </h1>
         <p class="tect-lg base-content not-italic leading-7font-normal my-6 max-[700px]:w-64 m-auto">
-          {props.subtitleTop}
+          {props.subtitleTop || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."}
         </p>
       </div>
 
@@ -47,10 +47,10 @@ export default function FAQ(props: Props) {
           >
             <input type="checkbox" />
             <div class="collapse-title text-lg not-italic leading-7 font-normal px-0">
-              {question}
+              {question || "Question text goes here"}
             </div>
             <div class="collapse-content">
-              <p class="base-300 not-italic font-normal">{answer}</p>
+              <p class="base-300 not-italic font-normal">{answer || "answer"}</p>
             </div>
           </div>
         ))}
@@ -58,13 +58,13 @@ export default function FAQ(props: Props) {
 
       <div class="bottom text-center">
         <h3 class="text-4xl base-content not-italic leading-10 font-normal my-3 max-[700px]:w-64 m-auto">
-          {props.titleTop}
+          {props.titleTop || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."}
         </h3>
         <p class="text-lg base-content not-italic leading-7 font-normal my-4 max-[700px]:w-64 m-auto">
-          {props.subtitlebot}
+          {props.subtitlebot || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "}
         </p>
         <button className="btn rounded-none capitalize my-3 bg-primary font-normal">
-          {props.botao}
+          {props.botao || "Contact"}
         </button>
       </div>
     </div>
