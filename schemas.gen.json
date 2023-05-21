@@ -90,18 +90,18 @@
               "deco-sites/masrap237/sections/Contact/Contact.MasRap-dev.tsx",
               "deco-sites/masrap237/sections/CookieConsent.tsx",
               "deco-sites/masrap237/sections/DesignSystem.tsx",
+              "deco-sites/masrap237/sections/Faq.tsx",
               "deco-sites/masrap237/sections/Features.tsx",
               "deco-sites/masrap237/sections/Footer.tsx",
               "deco-sites/masrap237/sections/Header.tsx",
-              "deco-sites/masrap237/sections/Header/Header.MasRap-dev.tsx",
               "deco-sites/masrap237/sections/Highlights.tsx",
               "deco-sites/masrap237/sections/ImageGallery/ImageGalery2.tsx",
               "deco-sites/masrap237/sections/ImageGallery/ImageGallery.MasRap-dev.tsx",
               "deco-sites/masrap237/sections/LinkTree.tsx",
+              "deco-sites/masrap237/sections/product.tsx",
               "deco-sites/masrap237/sections/ProductDetails.tsx",
               "deco-sites/masrap237/sections/ProductShelf.tsx",
               "deco-sites/masrap237/sections/SearchResult.tsx",
-              "deco-sites/masrap237/sections/Shortcuts.tsx",
               "deco-sites/masrap237/sections/Testimonials.tsx",
               "deco-sites/masrap237/sections/WhatsApp.tsx",
               "deco-sites/masrap237/sections/WishlistGallery.tsx",
@@ -8015,7 +8015,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@279ec7754614d4e7f55437af13dae49a&Colors": {
+    "ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@7186d66bbb1f7c9d60e2fb20bac31b37&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors"
@@ -8031,7 +8031,7 @@
           "required": []
         }
       ],
-      "title": "279ec7754614d4e7f55437af13dae49a&Colors"
+      "title": "7186d66bbb1f7c9d60e2fb20bac31b37&Colors"
     },
     "ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Miscellaneous": {
       "type": "object",
@@ -8134,7 +8134,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@279ec7754614d4e7f55437af13dae49a&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@7186d66bbb1f7c9d60e2fb20bac31b37&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -8148,6 +8148,66 @@
       },
       "required": [],
       "title": "deco-sites/masrap237/sections/DesignSystem.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvRmFxLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "subtitleTop": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Subtítulo do Topo",
+          "title": "Subtitle Top"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string",
+                "title": "Question"
+              },
+              "answer": {
+                "type": "string",
+                "title": "Answer"
+              }
+            },
+            "required": [
+              "question",
+              "answer"
+            ]
+          },
+          "title": "Questions"
+        },
+        "titleTop": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Titulo do Rodapé",
+          "title": "Title Top"
+        },
+        "subtitlebot": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Subtítulo do Rodapé",
+          "title": "Subtitlebot"
+        },
+        "botao": {
+          "type": "string",
+          "description": "Texto CTA",
+          "title": "Botao"
+        }
+      },
+      "required": [
+        "questions",
+        "botao"
+      ],
+      "title": "deco-sites/masrap237/sections/Faq.tsx@Props"
     },
     "ZGVjby1zaXRlcy9tYXNyYXAyMzcvY29tcG9uZW50cy91aS9GZWF0dXJlcy50c3g=@Feature": {
       "type": "object",
@@ -8708,64 +8768,6 @@
       ],
       "title": "deco-sites/masrap237/components/header/Header.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9tYXNyYXAyMzcvY29tcG9uZW50cy9tZW51L2hlYWRlci50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "link0": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Link0"
-        },
-        "link1": {
-          "type": "string",
-          "title": "Link1"
-        },
-        "link2": {
-          "type": "string",
-          "title": "Link2"
-        },
-        "link3": {
-          "type": "string",
-          "title": "Link3"
-        },
-        "link4": {
-          "type": "string",
-          "title": "Link4"
-        },
-        "text1": {
-          "type": "string",
-          "title": "Text1"
-        },
-        "text2": {
-          "type": "string",
-          "title": "Text2"
-        },
-        "text3": {
-          "type": "string",
-          "title": "Text3"
-        },
-        "text4": {
-          "type": "string",
-          "title": "Text4"
-        },
-        "text5": {
-          "type": "string",
-          "title": "Text5"
-        }
-      },
-      "required": [
-        "link0",
-        "link1",
-        "link2",
-        "link3",
-        "link4",
-        "text1",
-        "text2",
-        "text3",
-        "text4",
-        "text5"
-      ],
-      "title": "deco-sites/masrap237/components/menu/header.tsx@Props"
-    },
     "ZGVjby1zaXRlcy9tYXNyYXAyMzcvY29tcG9uZW50cy91aS9IaWdobGlnaHRzLnRzeA==@Highlight": {
       "type": "object",
       "properties": {
@@ -9008,6 +9010,59 @@
       "required": [],
       "title": "deco-sites/masrap237/components/ui/LinkTree.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvcHJvZHVjdC50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "produto": {
+          "type": "string",
+          "title": "Produto"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "de": {
+          "type": "number",
+          "title": "De"
+        },
+        "por": {
+          "type": "number",
+          "title": "Por"
+        },
+        "link": {
+          "type": "string",
+          "title": "Link"
+        },
+        "link2": {
+          "type": "string",
+          "title": "Link2"
+        },
+        "link3": {
+          "type": "string",
+          "title": "Link3"
+        },
+        "link4": {
+          "type": "string",
+          "title": "Link4"
+        },
+        "link5": {
+          "type": "string",
+          "title": "Link5"
+        }
+      },
+      "required": [
+        "produto",
+        "image",
+        "de",
+        "por",
+        "link",
+        "link2",
+        "link3",
+        "link4",
+        "link5"
+      ],
+      "title": "deco-sites/masrap237/sections/product.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9tYXNyYXAyMzcvY29tcG9uZW50cy9wcm9kdWN0L1Byb2R1Y3REZXRhaWxzLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -9119,181 +9174,6 @@
         "columns"
       ],
       "title": "deco-sites/masrap237/components/search/SearchResult.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvU2hvcnRjdXRzLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "shortcuts": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "label": {
-                "type": "string",
-                "title": "Label"
-              },
-              "icon": {
-                "anyOf": [
-                  {
-                    "type": "string",
-                    "const": "ChevronLeft"
-                  },
-                  {
-                    "type": "string",
-                    "const": "ChevronRight"
-                  },
-                  {
-                    "type": "string",
-                    "const": "ChevronUp"
-                  },
-                  {
-                    "type": "string",
-                    "const": "ChevronDown"
-                  },
-                  {
-                    "type": "string",
-                    "const": "QuestionMarkCircle"
-                  },
-                  {
-                    "type": "string",
-                    "const": "User"
-                  },
-                  {
-                    "type": "string",
-                    "const": "ShoppingCart"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Bars3"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Heart"
-                  },
-                  {
-                    "type": "string",
-                    "const": "MagnifyingGlass"
-                  },
-                  {
-                    "type": "string",
-                    "const": "XMark"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Plus"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Minus"
-                  },
-                  {
-                    "type": "string",
-                    "const": "MapPin"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Phone"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Elo"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Mastercard"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Visa"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Pix"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Logo"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Facebook"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Instagram"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Tiktok"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Truck"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Discount"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Return"
-                  },
-                  {
-                    "type": "string",
-                    "const": "CreditCard"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Deco"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Discord"
-                  },
-                  {
-                    "type": "string",
-                    "const": "Trash"
-                  },
-                  {
-                    "type": "string",
-                    "const": "FilterList"
-                  },
-                  {
-                    "type": "string",
-                    "const": "WhatsApp"
-                  },
-                  {
-                    "type": "string",
-                    "const": "ArrowsPointingOut"
-                  }
-                ],
-                "type": "string",
-                "title": "Icon"
-              },
-              "tooltipLabel": {
-                "type": "string",
-                "title": "Tooltip Label"
-              },
-              "link": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "title": "Link"
-              }
-            },
-            "required": [
-              "label",
-              "icon",
-              "tooltipLabel"
-            ]
-          },
-          "title": "Shortcuts",
-          "description": "Cadastre cada shortcurt"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/masrap237/sections/Shortcuts.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image[]": {
       "type": "array",
@@ -9879,7 +9759,7 @@
       ],
       "title": "WorkflowRef"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@6fafe0f553db3c0685828404a37be338|WorkflowRef": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@95abd76f92dd138f258080286726977e|WorkflowRef": {
       "anyOf": [
         {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
@@ -9897,13 +9777,13 @@
           ]
         }
       ],
-      "title": "6fafe0f553db3c0685828404a37be338|WorkflowRef"
+      "title": "95abd76f92dd138f258080286726977e|WorkflowRef"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
       "type": "object",
       "properties": {
         "workflow": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@6fafe0f553db3c0685828404a37be338|WorkflowRef",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@95abd76f92dd138f258080286726977e|WorkflowRef",
           "title": "Workflow"
         },
         "id": {
@@ -11920,6 +11800,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvRmFxLnRzeA==": {
+      "title": "deco-sites/masrap237/sections/Faq.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvRmFxLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/masrap237/sections/Faq.tsx"
+          ],
+          "default": "deco-sites/masrap237/sections/Faq.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvRmVhdHVyZXMudHN4": {
       "title": "deco-sites/masrap237/sections/Features.tsx",
       "type": "object",
@@ -11980,27 +11881,6 @@
             "deco-sites/masrap237/sections/Header.tsx"
           ],
           "default": "deco-sites/masrap237/sections/Header.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvSGVhZGVyL0hlYWRlci5NYXNSYXAtZGV2LnRzeA==": {
-      "title": "deco-sites/masrap237/sections/Header/Header.MasRap-dev.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvY29tcG9uZW50cy9tZW51L2hlYWRlci50c3g=@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/masrap237/sections/Header/Header.MasRap-dev.tsx"
-          ],
-          "default": "deco-sites/masrap237/sections/Header/Header.MasRap-dev.tsx"
         }
       }
     },
@@ -12088,6 +11968,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvcHJvZHVjdC50c3g=": {
+      "title": "deco-sites/masrap237/sections/product.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvcHJvZHVjdC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/masrap237/sections/product.tsx"
+          ],
+          "default": "deco-sites/masrap237/sections/product.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvUHJvZHVjdERldGFpbHMudHN4": {
       "title": "deco-sites/masrap237/sections/ProductDetails.tsx",
       "type": "object",
@@ -12148,27 +12049,6 @@
             "deco-sites/masrap237/sections/SearchResult.tsx"
           ],
           "default": "deco-sites/masrap237/sections/SearchResult.tsx"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvU2hvcnRjdXRzLnRzeA==": {
-      "title": "deco-sites/masrap237/sections/Shortcuts.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvU2hvcnRjdXRzLnRzeA==@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/masrap237/sections/Shortcuts.tsx"
-          ],
-          "default": "deco-sites/masrap237/sections/Shortcuts.tsx"
         }
       }
     },
@@ -13390,6 +13270,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA=="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvRmFxLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvRmVhdHVyZXMudHN4"
         },
         {
@@ -13397,9 +13280,6 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvSGVhZGVyLnRzeA=="
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvSGVhZGVyL0hlYWRlci5NYXNSYXAtZGV2LnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvSGlnaGxpZ2h0cy50c3g="
@@ -13414,6 +13294,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvTGlua1RyZWUudHN4"
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvcHJvZHVjdC50c3g="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvUHJvZHVjdERldGFpbHMudHN4"
         },
         {
@@ -13421,9 +13304,6 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvU2VhcmNoUmVzdWx0LnRzeA=="
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvU2hvcnRjdXRzLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXNyYXAyMzcvc2VjdGlvbnMvVGVzdGltb25pYWxzLnRzeA=="

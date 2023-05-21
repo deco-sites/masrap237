@@ -6,42 +6,42 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $$$$0 from "./routes/styles.css.ts";
 import * as $$$$1 from "./routes/_app.tsx";
-import * as $$$$$0 from "./islands/AddToCartButton.tsx";
-import * as $$$$$1 from "./islands/HeaderButton.tsx";
-import * as $$$$$2 from "./islands/HeaderModals.tsx";
+import * as $$$$$0 from "./islands/Newsletter.tsx";
+import * as $$$$$1 from "./islands/WishlistButton.tsx";
+import * as $$$$$2 from "./islands/ShippingSimulation.tsx";
 import * as $$$$$3 from "./islands/HeaderSearchbar.tsx";
-import * as $$$$$4 from "./islands/Newsletter.tsx";
-import * as $$$$$5 from "./islands/OutOfStock.tsx";
-import * as $$$$$6 from "./islands/ProductImageZoom.tsx";
-import * as $$$$$7 from "./islands/SearchControls.tsx";
-import * as $$$$$8 from "./islands/ShippingSimulation.tsx";
-import * as $$$$$9 from "./islands/SliderJS.tsx";
-import * as $$$$$10 from "./islands/WishlistButton.tsx";
-import * as $$$$$$$$0 from "./sections/Auth/Header.tsx";
-import * as $$$$$$$$1 from "./sections/Auth/LogIn.MasRap-dev.tsx";
-import * as $$$$$$$$2 from "./sections/Auth/Signup.MasRap-dev.tsx";
-import * as $$$$$$$$3 from "./sections/BannerGrid.tsx";
-import * as $$$$$$$$4 from "./sections/BannerPLP.tsx";
-import * as $$$$$$$$5 from "./sections/Benefits.tsx";
-import * as $$$$$$$$6 from "./sections/Carousel.tsx";
-import * as $$$$$$$$7 from "./sections/Contact/Contact.MasRap-dev.tsx";
-import * as $$$$$$$$8 from "./sections/CookieConsent.tsx";
-import * as $$$$$$$$9 from "./sections/DesignSystem.tsx";
-import * as $$$$$$$$10 from "./sections/Features.tsx";
-import * as $$$$$$$$11 from "./sections/Footer.tsx";
-import * as $$$$$$$$12 from "./sections/Header/Header.MasRap-dev.tsx";
-import * as $$$$$$$$13 from "./sections/Header.tsx";
-import * as $$$$$$$$14 from "./sections/Highlights.tsx";
-import * as $$$$$$$$15 from "./sections/ImageGallery/ImageGalery2.tsx";
-import * as $$$$$$$$16 from "./sections/ImageGallery/ImageGallery.MasRap-dev.tsx";
-import * as $$$$$$$$17 from "./sections/LinkTree.tsx";
-import * as $$$$$$$$18 from "./sections/ProductDetails.tsx";
-import * as $$$$$$$$19 from "./sections/ProductShelf.tsx";
-import * as $$$$$$$$20 from "./sections/SearchResult.tsx";
-import * as $$$$$$$$21 from "./sections/Shortcuts.tsx";
-import * as $$$$$$$$22 from "./sections/Testimonials.tsx";
-import * as $$$$$$$$23 from "./sections/WhatsApp.tsx";
-import * as $$$$$$$$24 from "./sections/WishlistGallery.tsx";
+import * as $$$$$4 from "./islands/HeaderButton.tsx";
+import * as $$$$$5 from "./islands/AddToCartButton.tsx";
+import * as $$$$$6 from "./islands/HeaderModals.tsx";
+import * as $$$$$7 from "./islands/SliderJS.tsx";
+import * as $$$$$8 from "./islands/ProductImageZoom.tsx";
+import * as $$$$$9 from "./islands/OutOfStock.tsx";
+import * as $$$$$10 from "./islands/SearchControls.tsx";
+import * as $$$$$$$$0 from "./sections/WishlistGallery.tsx";
+import * as $$$$$$$$1 from "./sections/product.tsx";
+import * as $$$$$$$$2 from "./sections/LinkTree.tsx";
+import * as $$$$$$$$3 from "./sections/Contact/Contact.MasRap-dev.tsx";
+import * as $$$$$$$$4 from "./sections/Features.tsx";
+import * as $$$$$$$$5 from "./sections/BannerPLP.tsx";
+import * as $$$$$$$$6 from "./sections/Auth/LogIn.MasRap-dev.tsx";
+import * as $$$$$$$$7 from "./sections/Auth/Signup.MasRap-dev.tsx";
+import * as $$$$$$$$8 from "./sections/Auth/Header.tsx";
+import * as $$$$$$$$9 from "./sections/BannerGrid.tsx";
+import * as $$$$$$$$10 from "./sections/SearchResult.tsx";
+import * as $$$$$$$$11 from "./sections/ProductShelf.tsx";
+import * as $$$$$$$$12 from "./sections/Footer.tsx";
+import * as $$$$$$$$13 from "./sections/Testimonials.tsx";
+import * as $$$$$$$$14 from "./sections/CookieConsent.tsx";
+import * as $$$$$$$$15 from "./sections/DesignSystem.tsx";
+import * as $$$$$$$$16 from "./sections/Header.tsx";
+import * as $$$$$$$$17 from "./sections/ImageGallery/ImageGalery2.tsx";
+import * as $$$$$$$$18 from "./sections/ImageGallery/ImageGallery.MasRap-dev.tsx";
+import * as $$$$$$$$19 from "./sections/ProductDetails.tsx";
+import * as $$$$$$$$20 from "./sections/Faq.tsx";
+import * as $$$$$$$$21 from "./sections/Highlights.tsx";
+import * as $$$$$$$$22 from "./sections/WhatsApp.tsx";
+import * as $$$$$$$$23 from "./sections/Benefits.tsx";
+import * as $$$$$$$$24 from "./sections/Carousel.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -165,48 +165,48 @@ const manifest = {
     "./routes/styles.css.ts": $$$$0,
   },
   "islands": {
-    "./islands/AddToCartButton.tsx": $$$$$0,
-    "./islands/HeaderButton.tsx": $$$$$1,
-    "./islands/HeaderModals.tsx": $$$$$2,
+    "./islands/AddToCartButton.tsx": $$$$$5,
+    "./islands/HeaderButton.tsx": $$$$$4,
+    "./islands/HeaderModals.tsx": $$$$$6,
     "./islands/HeaderSearchbar.tsx": $$$$$3,
-    "./islands/Newsletter.tsx": $$$$$4,
-    "./islands/OutOfStock.tsx": $$$$$5,
-    "./islands/ProductImageZoom.tsx": $$$$$6,
-    "./islands/SearchControls.tsx": $$$$$7,
-    "./islands/ShippingSimulation.tsx": $$$$$8,
-    "./islands/SliderJS.tsx": $$$$$9,
-    "./islands/WishlistButton.tsx": $$$$$10,
+    "./islands/Newsletter.tsx": $$$$$0,
+    "./islands/OutOfStock.tsx": $$$$$9,
+    "./islands/ProductImageZoom.tsx": $$$$$8,
+    "./islands/SearchControls.tsx": $$$$$10,
+    "./islands/ShippingSimulation.tsx": $$$$$2,
+    "./islands/SliderJS.tsx": $$$$$7,
+    "./islands/WishlistButton.tsx": $$$$$1,
   },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$$0,
     "$live/sections/Slot.tsx": i2$$$$1,
     "$live/sections/UseSlot.tsx": i2$$$$2,
-    "deco-sites/masrap237/sections/Auth/Header.tsx": $$$$$$$$0,
-    "deco-sites/masrap237/sections/Auth/LogIn.MasRap-dev.tsx": $$$$$$$$1,
-    "deco-sites/masrap237/sections/Auth/Signup.MasRap-dev.tsx": $$$$$$$$2,
-    "deco-sites/masrap237/sections/BannerGrid.tsx": $$$$$$$$3,
-    "deco-sites/masrap237/sections/BannerPLP.tsx": $$$$$$$$4,
-    "deco-sites/masrap237/sections/Benefits.tsx": $$$$$$$$5,
-    "deco-sites/masrap237/sections/Carousel.tsx": $$$$$$$$6,
-    "deco-sites/masrap237/sections/Contact/Contact.MasRap-dev.tsx": $$$$$$$$7,
-    "deco-sites/masrap237/sections/CookieConsent.tsx": $$$$$$$$8,
-    "deco-sites/masrap237/sections/DesignSystem.tsx": $$$$$$$$9,
-    "deco-sites/masrap237/sections/Features.tsx": $$$$$$$$10,
-    "deco-sites/masrap237/sections/Footer.tsx": $$$$$$$$11,
-    "deco-sites/masrap237/sections/Header.tsx": $$$$$$$$13,
-    "deco-sites/masrap237/sections/Header/Header.MasRap-dev.tsx": $$$$$$$$12,
-    "deco-sites/masrap237/sections/Highlights.tsx": $$$$$$$$14,
-    "deco-sites/masrap237/sections/ImageGallery/ImageGalery2.tsx": $$$$$$$$15,
+    "deco-sites/masrap237/sections/Auth/Header.tsx": $$$$$$$$8,
+    "deco-sites/masrap237/sections/Auth/LogIn.MasRap-dev.tsx": $$$$$$$$6,
+    "deco-sites/masrap237/sections/Auth/Signup.MasRap-dev.tsx": $$$$$$$$7,
+    "deco-sites/masrap237/sections/BannerGrid.tsx": $$$$$$$$9,
+    "deco-sites/masrap237/sections/BannerPLP.tsx": $$$$$$$$5,
+    "deco-sites/masrap237/sections/Benefits.tsx": $$$$$$$$23,
+    "deco-sites/masrap237/sections/Carousel.tsx": $$$$$$$$24,
+    "deco-sites/masrap237/sections/Contact/Contact.MasRap-dev.tsx": $$$$$$$$3,
+    "deco-sites/masrap237/sections/CookieConsent.tsx": $$$$$$$$14,
+    "deco-sites/masrap237/sections/DesignSystem.tsx": $$$$$$$$15,
+    "deco-sites/masrap237/sections/Faq.tsx": $$$$$$$$20,
+    "deco-sites/masrap237/sections/Features.tsx": $$$$$$$$4,
+    "deco-sites/masrap237/sections/Footer.tsx": $$$$$$$$12,
+    "deco-sites/masrap237/sections/Header.tsx": $$$$$$$$16,
+    "deco-sites/masrap237/sections/Highlights.tsx": $$$$$$$$21,
+    "deco-sites/masrap237/sections/ImageGallery/ImageGalery2.tsx": $$$$$$$$17,
     "deco-sites/masrap237/sections/ImageGallery/ImageGallery.MasRap-dev.tsx":
-      $$$$$$$$16,
-    "deco-sites/masrap237/sections/LinkTree.tsx": $$$$$$$$17,
-    "deco-sites/masrap237/sections/ProductDetails.tsx": $$$$$$$$18,
-    "deco-sites/masrap237/sections/ProductShelf.tsx": $$$$$$$$19,
-    "deco-sites/masrap237/sections/SearchResult.tsx": $$$$$$$$20,
-    "deco-sites/masrap237/sections/Shortcuts.tsx": $$$$$$$$21,
-    "deco-sites/masrap237/sections/Testimonials.tsx": $$$$$$$$22,
-    "deco-sites/masrap237/sections/WhatsApp.tsx": $$$$$$$$23,
-    "deco-sites/masrap237/sections/WishlistGallery.tsx": $$$$$$$$24,
+      $$$$$$$$18,
+    "deco-sites/masrap237/sections/LinkTree.tsx": $$$$$$$$2,
+    "deco-sites/masrap237/sections/product.tsx": $$$$$$$$1,
+    "deco-sites/masrap237/sections/ProductDetails.tsx": $$$$$$$$19,
+    "deco-sites/masrap237/sections/ProductShelf.tsx": $$$$$$$$11,
+    "deco-sites/masrap237/sections/SearchResult.tsx": $$$$$$$$10,
+    "deco-sites/masrap237/sections/Testimonials.tsx": $$$$$$$$13,
+    "deco-sites/masrap237/sections/WhatsApp.tsx": $$$$$$$$22,
+    "deco-sites/masrap237/sections/WishlistGallery.tsx": $$$$$$$$0,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$$5,
