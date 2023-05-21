@@ -17,11 +17,11 @@ export default function Product(
 ) {
   return (
     <main class="flex w-screen h-screen justify-center items-center font-sans ">
-      <div class="bg-blue-300 flex justify-around w-[65vw] h-[40vw] shadow-2xl items-center rounded-lg max-sm:w-[80vw] max-sm:h-[80%] max-sm:flex max-sm:flex-col">
+      <div class="bg-gray-200 flex justify-around w-[65vw] h-[40vw] shadow-2xl items-center rounded-lg max-sm:w-[80vw] max-sm:h-[80%] max-sm:flex max-sm:flex-col">
         <div class=" w-[20vw] h-[30vw] max-sm:bg-black max-sm:w-[80%] max-sm:h-[40%]">
           <img class="w-full h-full rounded-lg " src={image}></img>
         </div>
-        <div class="bg-white rounded-lg shadow-gray-300 w-[25vw] h-[30vw] flex flex-col items-center max-sm:w-[80%] max-sm:h-[40%] ">
+        <div class="bg-white rounded-lg shadow-xl w-[25vw] h-[30vw] flex flex-col items-center max-sm:w-[80%] max-sm:h-[40%] ">
           <div class="text-center max-sm:mt-2">
             <p class="text-3xl mb-4 max-sm:mb-0 max-sm:text-2xl">Tamanho:</p>
             <ul class="mt-7 flex flex-col justify-center items-center max-sm:mt-4 max-sm:flex-row ">
