@@ -28,7 +28,7 @@ export default function Navbar(params: Props) {
       return `#${index - 1}`;
     }
   }
-  
+
   function seting(index: number) {
     if (index >= 0 && index < params.texts.length) {
       setValue(index);
