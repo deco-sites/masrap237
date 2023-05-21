@@ -48,19 +48,17 @@ const CookieConsent = ({
 }: Props) => {
   const id = `cookie-consent-${useId()}`;
 
-  const widthModal =
-    modalWidth === "small"
-      ? "md:w-96"
-      : modalWidth === "medium"
-      ? "md:w-1/2"
-      : "md:w-[calc(100%-32px)]";
+  const widthModal = modalWidth === "small"
+    ? "md:w-96"
+    : modalWidth === "medium"
+    ? "md:w-1/2"
+    : "md:w-[calc(100%-32px)]";
 
-  const positionModal =
-    modalPosition === "left"
-      ? "md:left-8"
-      : modalPosition === "right"
-      ? "md:right-8 inset-x-auto"
-      : "md:-translate-x-1/2 md:left-1/2";
+  const positionModal = modalPosition === "left"
+    ? "md:left-8"
+    : modalPosition === "right"
+    ? "md:right-8 inset-x-auto"
+    : "md:-translate-x-1/2 md:left-1/2";
 
   return (
     <>
@@ -108,7 +106,7 @@ const CookieConsent = ({
           </button>
         </div>
       </div>
-      <script type="module" dangerouslySetInnerHTML={{__html:script(id)}} />
+      <script type="module" dangerouslySetInnerHTML={{ __html: script(id) }} />
     </>
   );
 };

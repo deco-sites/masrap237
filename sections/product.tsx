@@ -5,14 +5,16 @@ export interface Props {
   image: LiveImage;
   de: number;
   por: number;
-  link:string
-  link2:string
-  link3:string
-  link4:string
-  link5:string
+  link: string;
+  link2: string;
+  link3: string;
+  link4: string;
+  link5: string;
 }
 
-export default function Product({ produto, image, de, por,link,link2,link3,link4,link5}: Props) {
+export default function Product(
+  { produto, image, de, por, link, link2, link3, link4, link5 }: Props,
+) {
   return (
     <main class="flex w-screen h-screen justify-center items-center font-sans ">
       <div class="bg-blue-300 flex justify-around w-[65vw] h-[40vw] shadow-2xl items-center rounded-lg max-sm:w-[80vw] max-sm:h-[80%] max-sm:flex max-sm:flex-col">
@@ -32,7 +34,6 @@ export default function Product({ produto, image, de, por,link,link2,link3,link4
               <li class="my-4 w-20 border-[1px] border-gray-400 rounded-3xl max-sm:mt-1">
                 <a href={link2}>Grande</a>
               </li>
-
             </ul>
           </div>
           <div class=" ml-40 flex flex-col justify-start w-full max-sm:ml-20">
@@ -41,10 +42,16 @@ export default function Product({ produto, image, de, por,link,link2,link3,link4
               Por: {por}$
             </label>
           </div>
-          <button src={link4} class=" w-60 h-8 bg-blue-300 rounded-lg text-white max-sm:mt-2">
+          <button
+            src={link4}
+            class=" w-60 h-8 bg-blue-300 rounded-lg text-white max-sm:mt-2"
+          >
             Adicionar ao Carrinho
           </button>
-          <button src={link5} class="mt-1 w-60 h-8 bg-blue-600 rounded-lg text-white">
+          <button
+            src={link5}
+            class="mt-1 w-60 h-8 bg-blue-600 rounded-lg text-white"
+          >
             Comprar
           </button>
         </div>
